@@ -1,0 +1,20 @@
+# Code Ownership für automatische Review-Zuweisungen
+# Siehe: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Globale Owner für alles
+* @lenna
+
+# BME280 Firmware
+/src/main.cpp @lenna
+
+# VEML7700 Firmware
+/src/main_veml7700.cpp @lenna
+
+# Build-System
+/platformio.ini @lenna
+/.github/workflows/ @lenna
+
+# Dokumentation
+/README.md @lenna
+/CONTRIBUTING.md @lenna
+/CHANGELOG.md @lenna

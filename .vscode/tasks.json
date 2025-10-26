@@ -1,0 +1,51 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build: BME280 (esp32-c3-devkitm-1)",
+      "type": "shell",
+      "command": "pio",
+      "args": ["run", "-e", "esp32-c3-devkitm-1"],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Upload: BME280 (esp32-c3-devkitm-1)",
+      "type": "shell",
+      "command": "pio",
+      "args": ["run", "-e", "esp32-c3-devkitm-1", "-t", "upload"],
+      "group": "none",
+      "problemMatcher": []
+    },
+    {
+      "label": "Monitor: BME280 (115200)",
+      "type": "shell",
+      "command": "pio",
+      "args": ["device", "monitor", "-e", "esp32-c3-devkitm-1"],
+      "isBackground": false
+    },
+    {
+      "label": "Build: VEML7700 (esp32-c3-veml7700)",
+      "type": "shell",
+      "command": "pio",
+      "args": ["run", "-e", "esp32-c3-veml7700"],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Upload: VEML7700 (esp32-c3-veml7700)",
+      "type": "shell",
+      "command": "pio",
+      "args": ["run", "-e", "esp32-c3-veml7700", "-t", "upload"],
+      "group": "none",
+      "problemMatcher": []
+    },
+    {
+      "label": "Monitor: VEML7700 (115200)",
+      "type": "shell",
+      "command": "pio",
+      "args": ["device", "monitor", "-e", "esp32-c3-veml7700"],
+      "isBackground": false
+    }
+  ]
+}
